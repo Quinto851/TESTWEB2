@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?dd3da192dc26117a4b970464dfe792f3";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies | KUNDAO Apparel</title>
-    <!-- GA4 Code -->
+    <title>Case Studies | KUNDAO Apparel - 昆道有限公司</title>
+    <meta name="description" content="See how KUNDAO Apparel helps fitness brands worldwide with custom gym wear manufacturing. Real client success stories and results.">
+    
+    <!-- GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,40 +14,165 @@ var _hmt = _hmt || [];
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXXXXX');
     </script>
+
+    <!-- 百度统计 -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a50e2b36533947a2e57bac684e9f4ec7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-        body{color:#333;line-height:1.6;background:#f8f9fa;}
-        header{background:#222;color:#fff;padding:2rem;text-align:center;}
-        nav{margin-top:1rem;}
-        nav a{color:#87CEFA;text-decoration:none;margin:0 8px;}
-        nav a:hover{text-decoration:underline;}
-        main{max-width:1000px;margin:3rem auto;padding:0 2rem;}
-        h2{margin:1.2rem 0 0.6rem;color:#222;}
-        p{margin-bottom:0.7rem;}
-        button{background:#2563eb;color:#fff;border:none;padding:0.8rem 1.6rem;border-radius:6px;font-size:1rem;cursor:pointer;margin-top:1rem;}
-        button:hover{background:#1d4ed8;}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+        body{color:#333;line-height:1.7;background:#f5f7fa;}
+        header{background:rgba(26,26,46,0.95);color:#fff;padding:1.2rem 2rem;position:sticky;top:0;z-index:100;}
+        .nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+        .logo{font-size:1.5rem;font-weight:bold;}
+        .logo span{color:#4fc3f7;}
+        nav a{color:#ccc;text-decoration:none;margin:0 15px;font-size:0.95rem;}
+        nav a:hover{color:#4fc3f7;}
+        .nav-cta{background:#1976d2;padding:0.5rem 1.2rem;border-radius:5px;}
+        
+        .page-header{background:linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);color:#fff;text-align:center;padding:4rem 2rem;}
+        .page-header h1{font-size:2.5rem;margin-bottom:1rem;}
+        .page-header p{color:#bbb;max-width:600px;margin:0 auto;}
+        
+        .container{max-width:1200px;margin:3rem auto;padding:0 2rem;}
+        
+        .case-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);margin-bottom:2.5rem;display:grid;grid-template-columns:1fr 1.5fr;}
+        .case-card:nth-child(even){grid-template-columns:1.5fr 1fr;}
+        .case-card:nth-child(even) .case-img{order:2;}
+        .case-img{height:100%;min-height:300px;object-fit:cover;width:100%;}
+        .case-info{padding:2.5rem;}
+        .case-tag{display:inline-block;background:#e3f2fd;color:#1976d2;padding:0.2rem 0.8rem;border-radius:20px;font-size:0.85rem;font-weight:bold;margin-bottom:1rem;}
+        .case-info h2{color:#1a1a2e;margin-bottom:1rem;font-size:1.5rem;}
+        .case-info p{color:#555;margin-bottom:1rem;}
+        .case-results{display:flex;gap:2rem;margin:1.5rem 0;padding:1rem;background:#f8f9fa;border-radius:8px;}
+        .result-item{text-align:center;}
+        .result-number{font-size:1.8rem;font-weight:bold;color:#1976d2;}
+        .result-label{font-size:0.85rem;color:#666;}
+        
+        .cta-banner{background:linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);color:#fff;text-align:center;padding:3rem 2rem;border-radius:12px;margin-top:3rem;}
+        .cta-banner h2{font-size:1.8rem;margin-bottom:1rem;}
+        .cta-banner p{margin-bottom:1.5rem;opacity:0.9;}
+        .btn-outline{background:transparent;color:#fff;border:2px solid #fff;padding:0.8rem 2rem;border-radius:8px;font-size:1rem;cursor:pointer;text-decoration:none;display:inline-block;}
+        
+        @media (max-width: 768px) {
+            .case-card, .case-card:nth-child(even){grid-template-columns:1fr;}
+            .case-card:nth-child(even) .case-img{order:0;}
+            .case-results{flex-wrap:wrap;}
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>KUNDAO Apparel | 昆道有限公司</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="product.html">Products</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="case.html">Case Studies</a> |
-            <a href="landing.html">Get Quote</a>
-        </nav>
+        <div class="nav-inner">
+            <div class="logo">KUNDAO <span>Apparel</span></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="blog.html">Blog</a>
+                <a href="case.html">Cases</a>
+                <a href="landing.html" class="nav-cta">Get Quote</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Case 1: US Fitness Brand Custom Gym T-shirts</h2>
-        <p>The client ordered 800pcs custom logo gym tees from KUNDAO Apparel. All products passed quality inspection.</p>
-        <p>Result: Stable repeat orders every quarter.</p>
-        <br>
-        <h2>Case 2: Europe Startup Gym Wear Line</h2>
-        <p>Small MOQ trial order for a new European fitness brand. KUNDAO produced samples first before mass production.</p>
-        <button onclick="gtag('event','cta_click',{page:'case'})">Get Your Project Quote</button>
-    </main>
+    <div class="page-header">
+        <h1>Client Success Stories</h1>
+        <p>See how KUNDAO Apparel partners with fitness brands worldwide to bring their vision to life.</p>
+    </div>
+
+    <div class="container">
+        <!-- 案例1 -->
+        <div class="case-card">
+            <img src="grey-tshirt.jpg" alt="美国健身品牌案例" class="case-img">
+            <div class="case-info">
+                <span class="case-tag">USA · Established Brand</span>
+                <h2>Case 1: US Fitness Brand Scales with KUNDAO</h2>
+                <p>A mid-sized US fitness brand was struggling with inconsistent quality from their previous supplier. They switched to KUNDAO Apparel for our reliable production and quality control.</p>
+                <p>We now produce their best-selling gym t-shirts and compression wear line on a quarterly basis.</p>
+                <div class="case-results">
+                    <div class="result-item">
+                        <div class="result-number">800+</div>
+                        <div class="result-label">pcs per order</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">4×</div>
+                        <div class="result-label">repeat orders/year</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">0</div>
+                        <div class="result-label">quality issues</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 案例2 -->
+        <div class="case-card">
+            <img src="navy-compression.jpg" alt="欧洲新品牌案例" class="case-img">
+            <div class="case-info">
+                <span class="case-tag">Europe · Startup Brand</span>
+                <h2>Case 2: European Startup Launches with Low MOQ</h2>
+                <p>A new fitness brand in Germany wanted to launch their first collection but couldn't commit to high minimum order quantities. We worked with them on a flexible 50-piece trial order.</p>
+                <p>After 3 months of successful sales, they came back for a second order of 300 pieces. Now they're a regular client.</p>
+                <div class="case-results">
+                    <div class="result-item">
+                        <div class="result-number">50 pcs</div>
+                        <div class="result-label">first order</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">300 pcs</div>
+                        <div class="result-label">second order</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">3 mo</div>
+                        <div class="result-label">to repeat order</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 案例3 -->
+        <div class="case-card">
+            <img src="black-mesh-tshirt.jpg" alt="网眼透气系列案例" class="case-img">
+            <div class="case-info">
+                <span class="case-tag">Australia · Boutique Gym Chain</span>
+                <h2>Case 3: Australian Gym Chain Custom Uniforms</h2>
+                <p>A boutique gym chain in Sydney needed custom staff uniforms that were both comfortable for training and looked professional. We developed a custom mesh breathable series.</p>
+                <p>The result: staff love the comfort, and members ask where to buy the shirts too!</p>
+                <div class="case-results">
+                    <div class="result-item">
+                        <div class="result-number">150 pcs</div>
+                        <div class="result-label">staff uniforms</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">Custom</div>
+                        <div class="result-label">mesh fabric</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-number">98%</div>
+                        <div class="result-label">staff satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="cta-banner">
+            <h2>Want to Be Our Next Success Story?</h2>
+            <p>Join 50+ fitness brands who trust KUNDAO Apparel for their production needs.</p>
+            <a href="landing.html" class="btn-outline" onclick="gtag('event','cta_click',{page:'case',type:'bottom_cta'})">Start Your Project</a>
+        </div>
+    </div>
+
+    <footer style="background:#1a1a2e;color:#888;text-align:center;padding:2rem;margin-top:3rem;">
+        <p>© 2026 KUNDAO Apparel | 昆道有限公司. All rights reserved.</p>
+    </footer>
 </body>
 </html>
