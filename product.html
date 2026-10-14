@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Men Gym T-shirt | KUNDAO Apparel</title>
+    <title>Men Gym T-shirt | KUNDAO Apparel - 昆道有限公司</title>
+    <meta name="description" content="KUNDAO Apparel 昆道有限公司 - Custom men fitness t-shirt bulk wholesale. High stretch workout tees, breathable mesh fabric, custom logo printing. MOQ 50 pcs.">
+    
     <!-- GA4 Code -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
@@ -25,76 +27,278 @@
     </script>
 
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-        body{color:#333;line-height:1.6;background:#f8f9fa;}
-        header{background:#222;color:#fff;padding:2rem;text-align:center;}
-        nav{margin-top:1rem;}
-        nav a{color:#87CEFA;text-decoration:none;margin:0 8px;}
-        nav a:hover{text-decoration:underline;}
-        main{max-width:1000px;margin:3rem auto;padding:0 2rem;}
-        h2,h3{margin:1.2rem 0 0.6rem;color:#222;}
-        ul{padding-left:1.5rem;margin-bottom:1rem;}
-        p{margin-bottom:0.7rem;}
-        button{background:#2563eb;color:#fff;border:none;padding:0.8rem 1.6rem;border-radius:6px;font-size:1rem;cursor:pointer;margin-top:1rem;}
-        button:hover{background:#1d4ed8;}
-        .product-gallery{display:grid;grid-template-columns:repeat(2, 1fr);gap:1rem;margin:1.5rem 0;}
-        .product-gallery img{width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
-        .main-image{margin:1.5rem 0;}
-        .main-image img{width:100%;max-width:500px;border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,0.15);}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+        body{color:#333;line-height:1.7;background:#f5f7fa;}
+        
+        /* 顶部导航 */
+        header{background:linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);color:#fff;padding:1.5rem 2rem;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+        .header-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;}
+        .logo{font-size:1.5rem;font-weight:bold;}
+        .logo span{color:#4fc3f7;}
+        nav{margin-top:0.5rem;}
+        nav a{color:#ccc;text-decoration:none;margin:0 12px;font-size:0.95rem;transition:color 0.3s;}
+        nav a:hover{color:#4fc3f7;}
+        
+        /* 主容器 */
+        .container{max-width:1200px;margin:2rem auto;padding:0 2rem;}
+        
+        /* 面包屑 */
+        .breadcrumb{font-size:0.9rem;color:#888;margin-bottom:1.5rem;}
+        .breadcrumb a{color:#1976d2;text-decoration:none;}
+        
+        /* 产品主体布局 */
+        .product-main{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:3rem;}
+        
+        /* 产品图片区 */
+        .product-images{position:sticky;top:2rem;}
+        .main-img{width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1);margin-bottom:1rem;}
+        .thumbnails{display:grid;grid-template-columns:repeat(3,1fr);gap:0.8rem;}
+        .thumbnails img{width:100%;border-radius:8px;cursor:pointer;transition:transform 0.2s;}
+        .thumbnails img:hover{transform:scale(1.05);}
+        
+        /* 产品信息区 */
+        .product-info h1{font-size:2rem;color:#1a1a2e;margin-bottom:0.5rem;}
+        .price-tag{display:inline-block;background:#e3f2fd;color:#1976d2;padding:0.3rem 1rem;border-radius:20px;font-weight:bold;margin:1rem 0;}
+        .product-desc{color:#555;margin-bottom:1.5rem;font-size:1.05rem;}
+        
+        /* 规格表 */
+        .spec-table{width:100%;border-collapse:collapse;margin:1.5rem 0;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+        .spec-table td{padding:0.8rem 1rem;border-bottom:1px solid #eee;}
+        .spec-table td:first-child{font-weight:bold;background:#f8f9fa;width:30%;}
+        
+        /* CTA按钮 */
+        .cta-buttons{display:flex;gap:1rem;margin:2rem 0;}
+        .btn-primary{background:linear-gradient(135deg, #1976d2 0%, #1565c0 100%);color:#fff;border:none;padding:1rem 2rem;border-radius:8px;font-size:1.1rem;cursor:pointer;flex:1;transition:transform 0.2s, box-shadow 0.2s;}
+        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(25,118,210,0.4);}
+        .btn-secondary{background:#fff;color:#1976d2;border:2px solid #1976d2;padding:1rem 2rem;border-radius:8px;font-size:1.1rem;cursor:pointer;flex:1;transition:all 0.2s;}
+        .btn-secondary:hover{background:#e3f2fd;}
+        
+        /* 信任徽章 */
+        .trust-badges{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0;padding:1.5rem;background:#fff;border-radius:8px;}
+        .badge{text-align:center;}
+        .badge-icon{font-size:1.5rem;margin-bottom:0.5rem;}
+        .badge-text{font-size:0.85rem;color:#666;}
+        
+        /* FAQ 手风琴效果 */
+        .faq-section{margin:3rem 0;}
+        .faq-item{background:#fff;border-radius:8px;margin-bottom:0.8rem;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+        .faq-question{padding:1.2rem 1.5rem;cursor:pointer;font-weight:bold;color:#1a1a2e;display:flex;justify-content:space-between;align-items:center;}
+        .faq-answer{padding:0 1.5rem 1.2rem;color:#555;}
+        
+        /* 客户评价 */
+        .reviews{margin:3rem 0;}
+        .review-card{background:#fff;padding:1.5rem;border-radius:8px;margin-bottom:1rem;box-shadow:0 2px 8px rgba(0,0,0,0.05);}
+        .review-rating{color:#ffc107;margin-bottom:0.5rem;}
+        .review-author{font-weight:bold;color:#333;}
+        .review-text{color:#666;margin-top:0.5rem;}
+        
+        /* 相关产品 */
+        .related-products{margin:3rem 0;}
+        .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+        .related-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.05);transition:transform 0.2s;}
+        .related-card:hover{transform:translateY(-4px);}
+        .related-card img{width:100%;height:200px;object-fit:cover;}
+        .related-card-info{padding:1rem;}
+        .related-card h4{margin-bottom:0.5rem;}
+        .related-card p{font-size:0.9rem;color:#666;}
+        
+        h2{color:#1a1a2e;margin-bottom:1.5rem;font-size:1.5rem;}
+        
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .product-main{grid-template-columns:1fr;}
+            .product-images{position:static;}
+            .cta-buttons{flex-direction:column;}
+            .trust-badges{grid-template-columns:1fr;}
+            .related-grid{grid-template-columns:1fr;}
+        }
     </style>
 </head>
 <body>
+    <!-- 顶部导航 -->
     <header>
-        <h1>KUNDAO Apparel | 昆道有限公司</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="product.html">Products</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="case.html">Case Studies</a> |
-            <a href="landing.html">Get Quote</a>
-        </nav>
+        <div class="header-inner">
+            <div class="logo">KUNDAO <span>Apparel</span></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="blog.html">Blog</a>
+                <a href="case.html">Case Studies</a>
+                <a href="landing.html">Get Quote</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Custom Men Fitness T-Shirt Bulk Wholesale</h2>
-        <p>KUNDAO Apparel manufactures high stretch workout tees for gym brands. Breathable fabric, custom logo printing.</p>
-
-        <!-- 主图 -->
-        <div class="main-image">
-            <img src="grey-tshirt.jpg" alt="KUNDAO 男士健身短袖 灰色款">
+    <div class="container">
+        <!-- 面包屑导航 -->
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <a href="product.html">Products</a> / Men Gym T-shirt
         </div>
 
-        <!-- 产品相册（6张图） -->
-        <div class="product-gallery">
-            <img src="black-tshirt.jpg" alt="KUNDAO 男士健身短袖 黑色款">
-            <img src="black-mesh-tshirt.jpg" alt="KUNDAO 网眼透气健身短袖 健身房场景">
-            <img src="black-mesh-detail.jpg" alt="KUNDAO 网眼健身短袖 胸口logo细节">
-            <img src="grey-compression.jpg" alt="KUNDAO 紧身压缩健身短袖 灰色">
-            <img src="navy-compression.jpg" alt="KUNDAO 紧身压缩健身短袖 藏青色">
-            <img src="grey-tshirt.jpg" alt="KUNDAO 基础款健身短袖 灰色">
+        <!-- 产品主体 -->
+        <div class="product-main">
+            <!-- 左侧：图片 -->
+            <div class="product-images">
+                <img src="grey-tshirt.jpg" alt="KUNDAO 男士健身短袖 灰色款 - 正面展示" class="main-img">
+                <div class="thumbnails">
+                    <img src="black-tshirt.jpg" alt="黑色款">
+                    <img src="black-mesh-tshirt.jpg" alt="网眼透气款">
+                    <img src="black-mesh-detail.jpg" alt="细节展示">
+                    <img src="grey-compression.jpg" alt="紧身款灰色">
+                    <img src="navy-compression.jpg" alt="紧身款藏青色">
+                    <img src="grey-tshirt.jpg" alt="基础款灰色">
+                </div>
+            </div>
+
+            <!-- 右侧：产品信息 -->
+            <div class="product-info">
+                <h1>Custom Men Fitness T-Shirt</h1>
+                <p style="color:#888;">Model: KD-GT-001 | Category: Gym Wear</p>
+                <div class="price-tag">MOQ: 50 pcs</div>
+                
+                <p class="product-desc">
+                    High-performance workout t-shirt designed for serious fitness enthusiasts. 
+                    Made with premium stretch fabric that moves with your body during every rep. 
+                    Breathable mesh construction keeps you cool during intense training sessions. 
+                    Perfect for gym brands looking for reliable wholesale fitness apparel.
+                </p>
+
+                <!-- 规格表 -->
+                <table class="spec-table">
+                    <tr><td>Material</td><td>95% Cotton + 5% Spandex / Mesh Fabric</td></tr>
+                    <tr><td>Weight</td><td>180-220 GSM</td></tr>
+                    <tr><td>Colors Available</td><td>Black, Grey, Navy, White, Custom Color</td></tr>
+                    <tr><td>Logo Options</td><td>Screen Print, Heat Transfer, Embroidery</td></tr>
+                    <tr><td>Size Range</td><td>S - XXL (Custom Size Available)</td></tr>
+                    <tr><td>Production Time</td><td>15-25 days after sample confirmation</td></tr>
+                    <tr><td>Sample Time</td><td>3-7 days</td></tr>
+                </table>
+
+                <!-- CTA 按钮 -->
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="gtag('event','cta_click',{page:'product',type:'main_inquiry'})">Send Inquiry</button>
+                    <button class="btn-secondary" onclick="gtag('event','cta_click',{page:'product',type:'request_sample'})">Request Sample</button>
+                </div>
+
+                <!-- 信任徽章 -->
+                <div class="trust-badges">
+                    <div class="badge">
+                        <div class="badge-icon">✓</div>
+                        <div class="badge-text">ISO 9001<br>Quality Certified</div>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">🚚</div>
+                        <div class="badge-text">Global Shipping<br>Worldwide Delivery</div>
+                    </div>
+                    <div class="badge">
+                        <div class="badge-icon">💬</div>
+                        <div class="badge-text">24h Response<br>Quick Support</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <h3>Specifications</h3>
-        <ul>
-            <li>Material: 95% cotton +5% spandex / Mesh breathable fabric</li>
-            <li>Color: Black, Grey, Navy, Custom color available</li>
-            <li>MOQ: 50 pcs</li>
-            <li>Logo: Screen print / Heat transfer / Embroidery</li>
-        </ul>
+        <!-- FAQ -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+                    Can I print my own brand logo on the t-shirts? <span>+</span>
+                </div>
+                <div class="faq-answer" style="display:none;">
+                    Yes, absolutely! We support multiple logo printing methods including screen printing, heat transfer, and embroidery. You can choose the method that best fits your brand positioning and budget.
+                </div>
+            </div>
 
-        <h3>FAQ</h3>
-        <p>Q: Can KUNDAO print my brand logo on gym clothes?</p>
-        <p>A: Yes, we support screen print and heat transfer printing for fitness apparel.</p>
-        <p>Q: What is your production lead time?</p>
-        <p>A: Production around 15-25 days after sample confirmation.</p>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+                    What is your minimum order quantity? <span>+</span>
+                </div>
+                <div class="faq-answer" style="display:none;">
+                    Our standard MOQ is 50 pieces per design. For new brands or trial orders, we can discuss flexible MOQ options. Contact us for details.
+                </div>
+            </div>
 
-        <button onclick="gtag('event','cta_click',{page:'product'})">Send Inquiry / Get Quote</button>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+                    How long does production take? <span>+</span>
+                </div>
+                <div class="faq-answer" style="display:none;">
+                    Production typically takes 15-25 days after sample confirmation. Sample development takes 3-7 days. Shipping time varies by destination country.
+                </div>
+            </div>
 
-        <!-- Simulate form submit event -->
-        <div style="margin-top:30px;">
-            <h4>Quick Inquiry Form (Demo only)</h4>
-            <button onclick="gtag('event','form_submit',{form:'product_inquiry'})">Submit Inquiry</button>
+            <div class="faq-item">
+                <div class="faq-question" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'">
+                    Do you provide samples before bulk order? <span>+</span>
+                </div>
+                <div class="faq-answer" style="display:none;">
+                    Yes! We strongly recommend ordering a sample first to check the fabric quality and fit. Sample fees are refundable when you place your bulk order.
+                </div>
+            </div>
         </div>
-    </main>
+
+        <!-- 客户评价 -->
+        <div class="reviews">
+            <h2>What Our Clients Say</h2>
+            
+            <div class="review-card">
+                <div class="review-rating">★★★★★</div>
+                <div class="review-author">David L. - Fitness Brand Owner, USA</div>
+                <p class="review-text">
+                    "KUNDAO has been our go-to manufacturer for 2 years now. The quality is consistent, and their team is very responsive. Our customers love the fabric quality!"
+                </p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-rating">★★★★★</div>
+                <div class="review-author">Marco T. - Startup Brand, Europe</div>
+                <p class="review-text">
+                    "As a new brand, we were worried about MOQ, but KUNDAO worked with us on a small trial order. The sample quality exceeded our expectations. Already planning our next order!"
+                </p>
+            </div>
+        </div>
+
+        <!-- 相关产品推荐 -->
+        <div class="related-products">
+            <h2>Related Products</h2>
+            <div class="related-grid">
+                <div class="related-card">
+                    <img src="grey-compression.jpg" alt="紧身健身短袖">
+                    <div class="related-info">
+                        <h4>Compression Gym Tee</h4>
+                        <p>Tight fit, muscle-hugging design</p>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <img src="navy-compression.jpg" alt="藏青色紧身短袖">
+                    <div class="related-info">
+                        <h4>Navy Performance Tee</h4>
+                        <p>Quick-dry, sweat-wicking fabric</p>
+                    </div>
+                </div>
+                <div class="related-card">
+                    <img src="black-mesh-detail.jpg" alt="网眼透气短袖">
+                    <div class="related-info">
+                        <h4>Mesh Breathable Tee</h4>
+                        <p>Ultra-breathable for intense training</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 表单提交演示 -->
+        <div style="text-align:center; margin:3rem 0; padding:2rem; background:#fff; border-radius:12px; box-shadow:0 2px 10px rgba(0,0,0,0.05);">
+            <h3>Ready to Start Your Project?</h3>
+            <p style="color:#666; margin:1rem 0;">Tell us your requirements, get a free quote within 24 hours.</p>
+            <button class="btn-primary" onclick="gtag('event','form_submit',{form:'product_inquiry'})" style="font-size:1.1rem; padding:1rem 3rem;">Submit Inquiry Now</button>
+        </div>
+    </div>
+
+    <footer style="background:#1a1a2e; color:#888; text-align:center; padding:2rem; margin-top:3rem;">
+        <p>© 2026 KUNDAO Apparel | 昆道有限公司. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+
