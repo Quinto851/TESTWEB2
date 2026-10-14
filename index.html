@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?dd3da192dc26117a4b970464dfe792f3";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | KUNDAO Apparel</title>
-    <!-- GA4 Code -->
+    <title>KUNDAO Apparel | 昆道有限公司 - Custom Fitness Wear Manufacturer</title>
+    <meta name="description" content="KUNDAO Apparel 昆道有限公司 - Professional custom fitness apparel manufacturer. Wholesale gym t-shirts, hoodies, leggings for brands worldwide. MOQ 50 pcs.">
+    
+    <!-- GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,38 +14,197 @@ var _hmt = _hmt || [];
         gtag('js', new Date());
         gtag('config', 'G-XXXXXXXXXX');
     </script>
+
+    <!-- 百度统计 -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?a50e2b36533947a2e57bac684e9f4ec7";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
-        body{color:#333;line-height:1.6;background:#f8f9fa;}
-        header{background:#222;color:#fff;padding:2rem;text-align:center;}
-        header p{margin-top:0.5rem;opacity:0.85;}
-        nav{margin-top:1rem;}
-        nav a{color:#87CEFA;text-decoration:none;margin:0 8px;}
-        nav a:hover{text-decoration:underline;}
-        main{max-width:1000px;margin:3rem auto;padding:0 2rem;}
-        h2{margin-bottom:1rem;color:#222;}
-        p{margin-bottom:1rem;font-size:1.05rem;}
-        button{background:#2563eb;color:#fff;border:none;padding:0.8rem 1.6rem;border-radius:6px;font-size:1rem;cursor:pointer;}
-        button:hover{background:#1d4ed8;}
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial,sans-serif;}
+        body{color:#333;line-height:1.7;background:#fff;}
+        
+        /* 顶部导航 */
+        header{background:rgba(26,26,46,0.95);color:#fff;padding:1.2rem 2rem;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+        .nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
+        .logo{font-size:1.5rem;font-weight:bold;}
+        .logo span{color:#4fc3f7;}
+        nav a{color:#ccc;text-decoration:none;margin:0 15px;font-size:0.95rem;transition:color 0.3s;}
+        nav a:hover{color:#4fc3f7;}
+        .nav-cta{background:#1976d2;padding:0.5rem 1.2rem;border-radius:5px;}
+        .nav-cta:hover{background:#1565c0;color:#fff;}
+        
+        /* Hero 区域 */
+        .hero{background:linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);color:#fff;padding:6rem 2rem;text-align:center;}
+        .hero h1{font-size:3rem;margin-bottom:1rem;line-height:1.2;}
+        .hero h1 span{color:#4fc3f7;}
+        .hero p{font-size:1.2rem;color:#bbb;max-width:700px;margin:0 auto 2rem;}
+        .hero-btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+        .btn-primary{background:linear-gradient(135deg, #1976d2 0%, #1565c0 100%);color:#fff;border:none;padding:1rem 2.5rem;border-radius:8px;font-size:1.1rem;cursor:pointer;text-decoration:none;display:inline-block;transition:transform 0.2s;}
+        .btn-primary:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(25,118,210,0.4);}
+        .btn-outline{background:transparent;color:#fff;border:2px solid #4fc3f7;padding:1rem 2.5rem;border-radius:8px;font-size:1.1rem;cursor:pointer;text-decoration:none;display:inline-block;transition:all 0.2s;}
+        .btn-outline:hover{background:#4fc3f7;color:#1a1a2e;}
+        
+        /* 通用容器 */
+        .container{max-width:1200px;margin:0 auto;padding:0 2rem;}
+        section{padding:4rem 0;}
+        .section-title{text-align:center;font-size:2rem;color:#1a1a2e;margin-bottom:0.5rem;}
+        .section-subtitle{text-align:center;color:#888;margin-bottom:3rem;font-size:1.1rem;}
+        
+        /* 优势卡片 */
+        .features{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;}
+        .feature-card{text-align:center;padding:2rem;background:#f8f9fa;border-radius:12px;transition:transform 0.2s;}
+        .feature-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,0.1);}
+        .feature-icon{font-size:2.5rem;margin-bottom:1rem;}
+        .feature-card h3{margin-bottom:0.5rem;color:#1a1a2e;}
+        .feature-card p{color:#666;font-size:0.95rem;}
+        
+        /* 产品展示 */
+        .products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;}
+        .product-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 15px rgba(0,0,0,0.08);transition:transform 0.3s;}
+        .product-card:hover{transform:translateY(-5px);box-shadow:0 10px 30px rgba(0,0,0,0.15);}
+        .product-card img{width:100%;height:250px;object-fit:cover;}
+        .product-card-info{padding:1.5rem;}
+        .product-card h3{margin-bottom:0.5rem;color:#1a1a2e;}
+        .product-card p{color:#666;font-size:0.95rem;margin-bottom:1rem;}
+        .product-card a{color:#1976d2;text-decoration:none;font-weight:bold;}
+        
+        /* CTA 横幅 */
+        .cta-banner{background:linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);color:#fff;text-align:center;padding:4rem 2rem;border-radius:12px;}
+        .cta-banner h2{font-size:2rem;margin-bottom:1rem;}
+        .cta-banner p{margin-bottom:2rem;opacity:0.9;}
+        
+        /* Footer */
+        footer{background:#1a1a2e;color:#888;padding:3rem 2rem;text-align:center;}
+        .footer-links{margin:1rem 0;}
+        .footer-links a{color:#aaa;text-decoration:none;margin:0 10px;}
+        .footer-links a:hover{color:#4fc3f7;}
+        
+        @media (max-width: 768px) {
+            .hero h1{font-size:2rem;}
+            .features{grid-template-columns:repeat(2,1fr);}
+            .products-grid{grid-template-columns:1fr;}
+            nav a{margin:0 8px;font-size:0.85rem;}
+        }
     </style>
 </head>
 <body>
+    <!-- 导航 -->
     <header>
-        <h1>KUNDAO Apparel | 昆道有限公司</h1>
-        <p>Custom Wholesale Fitness & Gym Clothing Manufacturer</p>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="product.html">Products</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="case.html">Case Studies</a> |
-            <a href="landing.html">Get Quote</a>
-        </nav>
+        <div class="nav-inner">
+            <div class="logo">KUNDAO <span>Apparel</span></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="blog.html">Blog</a>
+                <a href="case.html">Cases</a>
+                <a href="landing.html" class="nav-cta">Get Quote</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Custom Gym Wear Bulk Production For Fitness Brands</h2>
-        <p>KUNDAO Apparel（昆道有限公司）provides high-performance custom fitness apparel, including gym t-shirts, hoodies, leggings, shorts. Support custom logo, custom fabric, small MOQ for new brands.</p>
-        <button onclick="gtag('event','cta_click',{page:'home'})">Request a Quote</button>
-    </main>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Custom Fitness Wear <br><span>Manufacturer & Wholesale Supplier</span></h1>
+        <p>KUNDAO Apparel (昆道有限公司) helps fitness brands worldwide create high-quality gym apparel with low MOQ, custom designs, and reliable production.</p>
+        <div class="hero-btns">
+            <a href="product.html" class="btn-primary" onclick="gtag('event','cta_click',{page:'home',type:'view_products'})">View Products</a>
+            <a href="landing.html" class="btn-outline" onclick="gtag('event','cta_click',{page:'home',type:'get_quote'})">Get Free Quote</a>
+        </div>
+    </section>
+
+    <!-- 核心优势 -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Why Choose KUNDAO?</h2>
+            <p class="section-subtitle">Trusted by fitness brands in 20+ countries</p>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🏭</div>
+                    <h3>Factory Direct</h3>
+                    <p>Direct manufacturer pricing, no middlemen. Best value for your brand.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📏</div>
+                    <h3>Low MOQ</h3>
+                    <p>Start from just 50 pcs per design. Perfect for new brands and small batches.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Full Customization</h3>
+                    <p>Custom fabric, colors, logos, labels, and packaging. Make it truly yours.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Delivery</h3>
+                    <p>15-25 days production time. Reliable global shipping to your door.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section style="background:#f8f9fa;">
+        <div class="container">
+            <h2 class="section-title">Our Popular Products</h2>
+            <p class="section-subtitle">Bestselling fitness apparel categories</p>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="grey-tshirt.jpg" alt="健身短袖">
+                    <div class="product-card-info">
+                        <h3>Gym T-Shirts</h3>
+                        <p>Breathable, stretchy workout tees for training.</p>
+                        <a href="product.html">View Details →</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="grey-compression.jpg" alt="紧身健身服">
+                    <div class="product-card-info">
+                        <h3>Compression Wear</h3>
+                        <p>Muscle-hugging tight fit for performance training.</p>
+                        <a href="product.html">View Details →</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="black-mesh-tshirt.jpg" alt="网眼透气短袖">
+                    <div class="product-card-info">
+                        <h3>Mesh Breathable Series</h3>
+                        <p>Ultra-breathable fabric for intense workouts.</p>
+                        <a href="product.html">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA 横幅 -->
+    <section>
+        <div class="container">
+            <div class="cta-banner">
+                <h2>Ready to Start Your Fitness Brand?</h2>
+                <p>Get a free quote and sample within 24 hours. No minimum order commitment.</p>
+                <a href="landing.html" class="btn-outline" style="border-color:#fff;color:#fff;" onclick="gtag('event','cta_click',{page:'home',type:'bottom_cta'})">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="font-size:1.2rem; margin-bottom:1rem;">KUNDAO <span style="color:#4fc3f7;">Apparel</span></p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="product.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="case.html">Cases</a>
+            <a href="landing.html">Contact</a>
+        </div>
+        <p>© 2026 KUNDAO Apparel | 昆道有限公司. All rights reserved.</p>
+    </footer>
 </body>
 </html>
